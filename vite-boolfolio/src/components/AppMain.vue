@@ -7,12 +7,11 @@
                 </h1>
                 <ul>
 
-                    <li v-for="project in projects" :key="project.id">
+                    <li v-for="project in projects" :key="project">
                         {{ project.title }} -- {{ project.type.name }} -- {{ project.technologies.name }}
                         <img :src="project.project_image" alt="">
                     </li>
                 </ul>
-
             </div>
         </section>
     </main>
